@@ -1,0 +1,47 @@
+.Cardsection{
+    /* display: flex;
+    justify-content:center;
+    flex-direction: row;
+    padding: 0; */
+    background: white;
+    width: 100vw;
+    /* height: 30vh; */
+    justify-content:center;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: auto;
+}
+
+/* .MainCardsection{
+    height:;
+} */
+
+.MainCardsection p{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 37px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* .CardsectionElement Link{
+    text-decoration: none;
+} */
+.categorylink{
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:1450px) {
+
+
+
+}
+
+
+@media screen and (max-width:768px) {
+
+}
+  
+  

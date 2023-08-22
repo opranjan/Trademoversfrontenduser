@@ -1,0 +1,260 @@
+
+.aboutdiv{
+    background-color: #3d65b0;
+    margin-bottom: 0;
+}
+.mastercardContainer{
+    background-color:#3d65b0 ;
+}
+.cardContainer{
+    /* display: flex;
+    justify-content:center;
+    flex-direction: row;
+    padding: 0; */
+    width: 100vw;
+    /* height: 30vh; */
+    justify-content:center;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: auto;
+
+}
+.card{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+
+    /* background: white;
+    width: 50vw;
+    justify-content:center;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: auto;
+    flex-direction: row; */
+    
+}
+
+.cardbodyicon{
+    width: 100%;
+    height:200px ;
+    align-items:center;
+    display: flex;
+    justify-content:center;
+    margin-right: 2%;
+    /* padding: 20px; */
+    background-color:#3d65b0 ;
+    border-radius: 360%;
+}
+.cardbodyiconimg{
+    
+    width: 150px;
+    height: 150px;
+    /* padding: 10px; */
+    object-fit:scale-down;
+    
+}
+
+.cardbodytext{
+   padding: 20px;
+   color: white;
+}
+.cardbodytexttitle{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.cardstory{
+    /* display: flex;
+    justify-content:center;
+    flex-direction: row;
+    padding: 0;
+    margin-top: 20px;
+    box-shadow: 0cap; */
+
+    
+    width: 100vw;
+    /* height: 30vh; */
+    justify-content:center;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: auto;
+}
+
+.cardbodyiconstory{
+    width: auto;
+    align-items:center;
+    display: flex;
+    background-color:#3d65b0 ;
+    justify-content:right;
+    margin-right: 2%;
+}
+
+.cardbodytextstory{
+    width: 50%;
+    justify-content:center;
+    align-items:flex-start;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.cardbodyiconstoryimg{
+    height: 150x;
+    width: 150px;
+    /* border-radius: 10px; */
+    object-fit: cover;
+
+}
+
+.cardtext{
+    font-size: 20px;
+    color: white;
+}
+
+
+
+
+
+
+
+/* new area */
+
+
+.pcompletedContainerMain{
+    /* display: flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding: 20px;
+    margin-bottom: 0; */
+
+    /* background: white; */
+    width: 100vw;
+    justify-content:center;
+    /* margin: auto; */
+    margin-top: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+ }
+
+
+
+
+ 
+ .pcompletedContainer{
+     border-radius: 360%;
+     border: 4px solid white;
+     display: flex;
+     justify-content:center;
+     align-items:center;
+     flex-direction: column;
+     color: white;
+     background-color: #3d65b0;
+     width: 250px;
+     margin-left: 10px;
+     margin-right: 10px;
+     padding: 10px;
+     height: 250px;
+ }
+ .pcompletedimage{
+     width: 80px;
+     height: 80px;
+     object-fit:scale-down;
+     /* border: 2px solid white; */
+     /* border-radius: 360%; */
+    
+ }
+ .pcompletedTitle{
+     font-size: 40px;
+     font-weight: bold;
+ }
+ 
+ .pcompletedText{
+     font-size: 18px;
+     text-align: center;
+ }
+
+
+
+
+
+ @media screen and (max-width:999px) {
+
+    .card{
+        flex-direction: column;  
+    }
+
+    .cardstory{
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+        padding: 0;
+        margin-top: 20px;
+        align-items: center;
+    
+        
+        /* width: 100vw;
+        justify-content:center;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: auto; */
+    }
+
+    .cardbodytextstory{
+        width: 100vw;
+    }
+    .cardbodyiconstory{
+        width: auto;
+    }
+
+    .pcompletedContainer{
+        margin-top: 10px;
+    }
+
+    .pcompletedContainerMain{
+        margin-top: 0;
+    }
+
+
+    
+
+ }
+
+
+ @media screen and (max-width:520px) {
+
+    .card{
+        flex-direction: column; 
+        width: 100vw; 
+    }
+
+    .cardContainer{
+        /* display: flex;
+        justify-content:center;
+        flex-direction: row;
+        padding: 0; */
+        width: 100vw;
+        /* height: 30vh; */
+        justify-content:center;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: auto;
+    
+    }
+
+    .cardbodytext{
+        padding: 20px;
+        color: white;
+        width: 100vw;
+     }
+
+ }

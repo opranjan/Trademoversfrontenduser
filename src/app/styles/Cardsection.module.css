@@ -1,0 +1,65 @@
+/* .Cardsection{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    padding: 0;
+    background: white;
+}
+
+.MainCardsection p{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 37px;
+    font-family:Arial, Helvetica, sans-serif;
+} */
+
+
+
+.ClienttrustusContainer{
+    /* border: 2px solid red; */
+    margin-bottom: 20px;
+}
+
+.TestimonialsContainer{
+    background-color:#3d65b0;
+    padding-bottom: 20px;
+}
+
+.Testimonialsheading {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 37px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+.OurAchievementsContainer{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 37px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.featuredproductsContainer{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 37px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #3d65b0;
+}
+
+/* .testimonials{
+    display: flex;
+    justify-content:start;
+    flex-direction: row;
+    background-color: blue;
+    align-items:start;
+    padding: 0;
+} */
+

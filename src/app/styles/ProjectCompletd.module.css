@@ -1,0 +1,46 @@
+.pcompletedContainerMain{
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: auto;
+
+
+   
+   justify-content:center;
+   /* align-items:flex-start;
+   padding: 20px; */
+   background-color: white;
+}
+
+.pcompletedContainer{
+    border-radius: 360%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    color: white;
+    background-color: #3d65b0;
+    width: 270px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    height: 270px;
+    /* flex: 1 1 1 1 270px; */
+}
+.pcompletedimage{
+    width: 80px;
+    height: 80px;
+    object-fit:scale-down;
+    /* border: 2px solid white; */
+    /* border-radius: 360%; */
+   
+}
+.pcompletedTitle{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.pcompletedText{
+    font-size: 18px;
+}

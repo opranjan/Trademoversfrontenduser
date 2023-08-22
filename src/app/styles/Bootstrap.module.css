@@ -1,0 +1,59 @@
+/* Start Bootstrap carousel */
+.itemP {
+    height: auto;
+    background-color: #3d65b0;
+    padding: 1px;
+    /* border: 2px solid blue; */
+  }
+  .itemP > img {
+    width: 100%;
+    object-fit:cover;
+    height: auto;
+    
+  }
+  
+  .caption {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+  }
+  
+  .caption h3 {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+  }
+  /* End Bootstrap carousel */
+
+  
+
+
+
+  @media screen and (max-width:1450px) {
+    .itemP {
+      height: auto;
+    }
+
+    .itemP > img {
+      width: 100%;
+      object-fit:scale-down;
+      height: auto;
+      
+    }
+
+
+}
+
+  @media screen and (max-width:768px) {
+    .itemP {
+      height: auto;
+    }
+
+    .itemP > img {
+      width: 100%;
+      object-fit:scale-down;
+      height: auto;
+      
+    }
+
+
+}
+  
