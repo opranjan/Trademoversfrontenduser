@@ -6,9 +6,8 @@ import {useState} from "react";
 
 
 
-function Serviceslayout(props){
+function Categorylayout(props){
     const [openCategory, setOpenCategory] = useState(false);
-    console.log("value " + openCategory)
     return(
         
        <div>
@@ -112,4 +111,4 @@ function Serviceslayout(props){
     )
 }
 
-export default Serviceslayout;
+export default Categorylayout;

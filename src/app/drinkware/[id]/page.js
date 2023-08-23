@@ -24,7 +24,7 @@ const Page = async ({params}) => {
                 <h2 className={styles.movie_title}>   Drink ware \ <span> {data.productname} </span> </h2>
                 <div className={styles.card_section}>
                     <div>
-                        <Image src={`https://trademovers.onrender.com/uploads/${data.image}`} alt={data.productname} width={600} height={500} />
+                        <Image src={`https://trademovers.onrender.com/uploads/${data.image}`} alt={data.productname} width={600} height={500} priority={true}/>
                     </div>
                     <div>
                         <h1>{data.productname}</h1>

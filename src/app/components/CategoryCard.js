@@ -1,14 +1,4 @@
 "use client";
-
-// import styles from "@/app/contact/contact.module.css"
-// import {Mulish} from "next/font/google";
-// import {useState} from "react";
-// const mulish = Mulish({
-//     subsets: ['latin'],
-//     display: 'swap',
-//     weight: ['300', '400', '500', '600', '700', '800', '900']
-// })
-
 import React from "react";
 import { Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
