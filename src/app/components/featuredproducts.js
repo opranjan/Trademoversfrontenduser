@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import pageStylef from "../styles/featuredproduct.module.css"
+import dynamic from "next/dynamic";
 
 const Featuredproducts = (curElem) => {
     const { _id,productname, productmaterial, productcstegory,image} = curElem;
@@ -34,4 +35,4 @@ const Featuredproducts = (curElem) => {
 );
 };
 
-export default Featuredproducts;
+export default dynamic(()=>Promise.resolve( Featuredproducts),{ssr:false});

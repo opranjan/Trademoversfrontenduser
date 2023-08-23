@@ -4,6 +4,7 @@ import styles from "@/app/contact/contact.module.css";
 import { Mulish } from "next/font/google";
 import { useState } from "react";
 import axios from "axios";
+import dynamic from "next/dynamic";
 const mulish = Mulish({
   subsets: ["latin"],
   display: "swap",
@@ -232,4 +233,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default dynamic(()=>Promise.resolve( ContactForm),{ssr:false});

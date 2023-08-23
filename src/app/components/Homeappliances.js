@@ -3,6 +3,7 @@ import styles from '@/app/styles/common.module.css'
 import React, { useEffect, useState } from 'react';
 import Link from "next/link";
 import Image from "next/image";
+import dynamic from 'next/dynamic';
 
 const  Homeappliances = (curElem) => {
 
@@ -30,4 +31,4 @@ const  Homeappliances = (curElem) => {
     );
 };
 
-export default  Homeappliances;
+export default dynamic(()=>Promise.resolve( Homeappliances),{ssr:false});

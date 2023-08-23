@@ -2,6 +2,7 @@ import styles from "@/app/styles/navbar.module.css"
 import Link from "next/link";
 import Image from "next/image";
 import Nav from "@/app/components/Nav";
+import dynamic from "next/dynamic";
 
 const Header = () => {
     return (
@@ -17,4 +18,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default dynamic(()=>Promise.resolve( Header),{ssr:false});

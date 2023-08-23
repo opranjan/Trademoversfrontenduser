@@ -1,13 +1,10 @@
 'use client'
-// import { Carousel } from 'react-responsive-carousel';
-// import 'react-responsive-carousel/lib/styles/carousel.min.css';
-
-
 import { useState } from "react";
 // import { items } from "public/Clientitem.json";
 import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../styles/Clienttrustus.module.css";
+import dynamic from "next/dynamic";
 
 
 const Clienttrustus = () => {
@@ -75,4 +72,4 @@ const Clienttrustus = () => {
   );
 };
 
-export default Clienttrustus;
+export default dynamic(()=>Promise.resolve( Clienttrustus),{ssr:false});

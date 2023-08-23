@@ -1,6 +1,7 @@
 import  styles from "@/app/contact/contact.module.css"
 import { MdEmail, MdVoiceChat, MdForum } from "react-icons/md";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 
 const ContactCard = () => {
     return (
@@ -37,4 +38,4 @@ const ContactCard = () => {
     );
 };
 
-export default ContactCard;
+export default dynamic(()=>Promise.resolve( ContactCard),{ssr:false});

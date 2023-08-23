@@ -8,6 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import dynamic from "next/dynamic";
 
 const Testimonials = () => {
   return (
@@ -171,4 +172,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default dynamic(()=>Promise.resolve( Testimonials),{ssr:false});

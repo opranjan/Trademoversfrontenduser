@@ -3,6 +3,7 @@ import Link from "next/link";
 import categorylayoutstyles from "../styles/Categorylayout.module.css";
 import CategoryCard from "./CategoryCard";
 import {useState} from "react";
+import dynamic from "next/dynamic";
 
 
 
@@ -111,4 +112,4 @@ function Categorylayout(props){
     )
 }
 
-export default Categorylayout;
+export default dynamic(()=>Promise.resolve( Categorylayout),{ssr:false});

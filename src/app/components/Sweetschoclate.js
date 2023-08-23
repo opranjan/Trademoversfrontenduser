@@ -3,6 +3,7 @@ import styles from '@/app/styles/common.module.css'
 import React, { useEffect, useState } from 'react';
 import Link from "next/link";
 import Image from "next/image";
+import dynamic from 'next/dynamic';
 
 const  Sweetschoclate = (curElem) => {
   const {_id, productname, productmaterial, productcstegory,image} = curElem;
@@ -29,4 +30,4 @@ const  Sweetschoclate = (curElem) => {
     );
 };
 
-export default  Sweetschoclate;
+export default dynamic(()=>Promise.resolve( Sweetschoclate),{ssr:false});

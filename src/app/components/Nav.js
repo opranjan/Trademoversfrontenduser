@@ -4,6 +4,7 @@ import styles from "@/app/styles/navbar.module.css";
 import { CgCloseR, CgMenu } from "react-icons/cg";
 import Link from "next/link";
 import { useState } from "react";
+import dynamic from "next/dynamic";
 
 
 const Nav = () => {
@@ -258,4 +259,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default dynamic(()=>Promise.resolve( Nav),{ssr:false});

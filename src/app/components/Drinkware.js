@@ -3,6 +3,7 @@ import styles from "@/app/styles/common.module.css";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
 const Drinkware = (curElem) => {
     const { _id,productname, productmaterial, productcstegory,image} = curElem;
@@ -32,4 +33,4 @@ const Drinkware = (curElem) => {
   );
 };
 
-export default Drinkware;
+export default dynamic(()=>Promise.resolve( Drinkware),{ssr:false});

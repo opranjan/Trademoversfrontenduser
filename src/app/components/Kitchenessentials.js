@@ -3,6 +3,7 @@ import styles from '@/app/styles/common.module.css'
 import React, { useEffect, useState } from 'react';
 import Link from "next/link";
 import Image from "next/image";
+import dynamic from 'next/dynamic';
 
 const  Kitchenessentials = (curElem) => {
   const {_id, productname, productmaterial, productcstegory,image} = curElem;
@@ -29,4 +30,4 @@ const  Kitchenessentials = (curElem) => {
     );
 };
 
-export default  Kitchenessentials;
+export default dynamic(()=>Promise.resolve( Kitchenessentials),{ssr:false});

@@ -3,6 +3,7 @@ import styles from '@/app/styles/common.module.css'
 import React, { useEffect, useState } from 'react';
 import Link from "next/link";
 import Image from "next/image";
+import dynamic from 'next/dynamic';
 
 const Officeessentials = (curElem) => {
 
@@ -30,4 +31,4 @@ const Officeessentials = (curElem) => {
     );
 };
 
-export default Officeessentials;
+export default dynamic(()=>Promise.resolve( Officeessentials),{ssr:false});

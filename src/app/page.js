@@ -12,6 +12,7 @@ import Featuredproductspage from "./featuredproducts/page";
 
 
 
+
 const Page = () => {
     return (
         <>

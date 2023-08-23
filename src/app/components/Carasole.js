@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../styles/Bootstrap.module.css";
+import dynamic from "next/dynamic";
 
 
 const MyCarousel = () => {
@@ -72,4 +73,4 @@ const MyCarousel = () => {
   );
 };
 
-export default MyCarousel;
+export default dynamic(()=>Promise.resolve( MyCarousel),{ssr:false});

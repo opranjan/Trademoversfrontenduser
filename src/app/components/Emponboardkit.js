@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Link from "next/link";
 import Image from "next/image";
 import styles from '@/app/styles/common.module.css'
+import dynamic from 'next/dynamic';
 
 const Emponboardkit = (curElem) => {
 
@@ -29,4 +30,4 @@ const Emponboardkit = (curElem) => {
     );
 };
 
-export default Emponboardkit;
+export default dynamic(()=>Promise.resolve( Emponboardkit),{ssr:false});

@@ -2,6 +2,7 @@ import React from 'react';
 import footerStyles from '@/app/styles/footer.module.css'
 import { FaFacebookF, FaWhatsappSquare,FaInstagram,FaLinkedinIn ,FaWhatsapp,FaPhone} from "react-icons/fa";
 import Link from "next/link";
+import dynamic from 'next/dynamic';
 
 
 export const metadata = {
@@ -85,4 +86,4 @@ const Footer = () => {
     );
 }
 
-export default Footer;
+export default dynamic(()=>Promise.resolve( Footer),{ssr:false});

@@ -1,6 +1,7 @@
 import styles from '@/app/styles/common.module.css'
 import Featuredproducts from "../components/featuredproducts";
 import pageStylef from "../styles/featuredproduct.module.css"
+import dynamic from 'next/dynamic';
 
 
 
@@ -34,4 +35,4 @@ const Featuredproductspage = async() => {
     );
 };
 
-export default Featuredproductspage;
+export default dynamic(()=>Promise.resolve(Featuredproductspage),{ssr:false});

@@ -2,6 +2,7 @@
 
 
 import pcompletedStyle from "../styles/ProjectCompletd.module.css"
+import dynamic from "next/dynamic";
 
 function ProjectCompleted() {
   return (
@@ -40,4 +41,4 @@ function ProjectCompleted() {
   );
 }
 
-export default ProjectCompleted;
+export default dynamic(()=>Promise.resolve( ProjectCompleted),{ssr:false});

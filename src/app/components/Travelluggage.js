@@ -2,6 +2,7 @@
 import styles from '@/app/styles/common.module.css'
 import Link from "next/link";
 import Image from "next/image";
+import dynamic from 'next/dynamic';
 
 const Traveluggage = (curElem) => {
 
@@ -29,4 +30,4 @@ const Traveluggage = (curElem) => {
     );
 };
 
-export default Traveluggage;
+export default dynamic(()=>Promise.resolve( Traveluggage),{ssr:false});

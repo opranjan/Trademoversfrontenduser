@@ -7,6 +7,7 @@ import pcompletedStyle from "../styles/ProjectCompletd.module.css";
 
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import dynamic from "next/dynamic";
 
 const Herosection = () => {
   return (
@@ -141,4 +142,4 @@ const Herosection = () => {
   );
 };
 
-export default Herosection;
+export default dynamic(()=>Promise.resolve( Herosection),{ssr:false});
