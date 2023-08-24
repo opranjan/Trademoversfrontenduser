@@ -11,7 +11,7 @@ const Traveluggage = (curElem) => {
     return (
       <div className={styles.card}>
         <div className={styles.card_image}>
-            <Image src={`https://trademovers.onrender.com/uploads/${image}`} alt="Image" width={260} height={200} priority={true} />
+            <Image src={`https://trademovers.onrender.com/uploads/${image}`} alt="Image" width={260} height={200} priority={true} className={styles.cargimg}/>
         </div>
         <div className={styles.card_data}>
             <h2>{productname}</h2>

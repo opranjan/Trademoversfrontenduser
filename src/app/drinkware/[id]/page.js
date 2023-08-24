@@ -29,6 +29,9 @@ const Page = async ({params}) => {
                     <div>
                         <h1>{data.productname}</h1>
                         <p>{data.productmaterial}</p>
+                        <p>{data.productcolor}</p>
+                        <p>{data.productsize}</p>
+                        <p>{data.productdescription}</p>
                     </div>
                 </div>
             </div>
