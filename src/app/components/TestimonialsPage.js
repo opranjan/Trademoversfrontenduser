@@ -1,6 +1,7 @@
 // pages/testimonials.js
 
 import Testimonial from '../components/Testimonials';
+import dynamic from 'next/dynamic';
 
 const testimonialsData = [
   {
@@ -25,4 +26,4 @@ const TestimonialsPage = () => {
   );
 };
 
-export default TestimonialsPage;
+export default dynamic(()=>Promise.resolve( TestimonialsPage),{ssr:false});

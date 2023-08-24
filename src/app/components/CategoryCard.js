@@ -13,7 +13,7 @@ const CategoryCard = (props) => {
        <Col >
         <Card className={cardstyles.Card}>
         <Card className={cardstyles.CardImgholder}>
-          <Card.Img   src={props.categoryicon} className={cardstyles.CardImg}/>
+          <img   src={props.categoryicon} className={cardstyles.CardImg}/>
           {/* <Image src={props.categoryicon} className={cardstyles.CardImg} width={50} height={50} priority={true}/> */}
           </Card>
           <Card.Title className={cardstyles.CardTitle}>{props.categorytitle}</Card.Title>
