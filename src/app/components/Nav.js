@@ -21,8 +21,8 @@ const Nav = () => {
           <ul className={styles.navbarList}>
             <li className={styles.navbarItem}>
               <Link
+              href="/"
                 className={styles.navbarLink}
-                href="#"
                 onClick={() => setOpenMenu(false)}
               >
                 Home
@@ -41,7 +41,7 @@ const Nav = () => {
 
             
 
-            <li  id={styles.dropdown}><Link href="#">Category</Link>
+            <li  id={styles.dropdown}><Link href="">Category</Link>
 
 
               <ul className={styles.submenu}>
