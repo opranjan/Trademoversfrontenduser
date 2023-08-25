@@ -28,15 +28,8 @@ const Nav = () => {
                 Home
               </Link>
             </li>
-            <li className={styles.navbarItem}>
-              <Link
-                className={styles.navbarLink}
-                href="/about"
-                onClick={() => setOpenMenu(false)}
-              >
-                About
-              </Link>
-            </li>
+
+            
 
 
 
@@ -48,7 +41,7 @@ const Nav = () => {
 
             
 
-            <li  id={styles.dropdown}><a href="#">Category</a>
+            <li  id={styles.dropdown}><Link href="#">Category</Link>
 
 
               <ul className={styles.submenu}>
@@ -228,6 +221,22 @@ const Nav = () => {
                 </li>
               </ul>
             </li>
+
+
+
+
+
+            <li className={styles.navbarItem}>
+              <Link
+                className={styles.navbarLink}
+                href="/about"
+                onClick={() => setOpenMenu(false)}
+              >
+                About
+              </Link>
+            </li>
+
+
             <li className={styles.navbarItem}>
               <Link
                 className={styles.navbarLink}

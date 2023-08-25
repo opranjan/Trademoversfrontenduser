@@ -1,7 +1,6 @@
 /* Start Bootstrap carousel */
 .itemP {
     height: 32rem;
-    /* border: 2px solid blue; */
     justify-content: center;
     align-items: flex-start;
   }
@@ -10,7 +9,6 @@
     object-fit:cover;
     height: 20rem;
     margin-top: 0;
-    /* border: 2px solid black; */
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
@@ -28,10 +26,57 @@
     font-weight: bold;
     margin-top: 5px;
     margin-bottom: 0;
-    /* border: 2px solid black; */
-    /* margin-bottom: 5px; */
   }
+
+
+
+
+  @media screen and (max-width:1450px) {
+    .itemP {
+      height: auto;
+    }
+
+    .itemP > img {
+      width: 100%;
+      object-fit:scale-down;
+      height: auto;
+      
+    }
+
+
+}
+
+  @media screen and (max-width:768px) {
+    .itemP {
+      height: auto;
+    }
+
+    .itemP > img {
+      width: 100%;
+      object-fit:scale-down;
+      height: auto;
+      
+    }
+
+    .itemP p{
+      font-size: 30px;
+     
+    }
+
+
+}
+
+
+
+@media screen and (max-width:500px) {
   
- 
-  /* End Bootstrap carousel */
+
+  .itemP p{
+    font-size: 25px;
+   
+  }
+
+
+}
+  
   

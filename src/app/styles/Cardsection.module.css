@@ -54,12 +54,30 @@
     background-color: #3d65b0;
 }
 
-/* .testimonials{
-    display: flex;
-    justify-content:start;
-    flex-direction: row;
-    background-color: blue;
-    align-items:start;
-    padding: 0;
-} */
+
+
+@media screen and (max-width:768px) {
+    .OurAchievementsContainer{
+        font-size: 30px;
+    }
+
+    .featuredproductsContainer{
+        font-size: 20px;
+    }
+
+
+}
+
+@media screen and (max-width:368px) {
+    .OurAchievementsContainer{
+        font-size: 25px;
+    }
+
+    .featuredproductsContainer{
+        font-size: 25px;
+    }
+
+
+}
+  
 

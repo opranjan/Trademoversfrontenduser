@@ -3,9 +3,9 @@ const Loading = () => {
   return (
     <section className={styles.loading_section}>
       <div className={styles.loading}>
-        <video autoPlay muted loop playsInline className="mp4-loader-video" id="loadingvideoframe">
+        {/* <video autoPlay muted loop playsInline className="mp4-loader-video" id="loadingvideoframe">
           <source src="loadervideo.mp4" type="video/mp4" />
-        </video>
+        </video> */}
       </div>
     </section>
   );

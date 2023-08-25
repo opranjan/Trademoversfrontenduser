@@ -21,14 +21,17 @@ const Page = async ({params}) => {
     return (
 
             <div className={styles.container}>
-                <h2 className={styles.movie_title}>   Drink ware \ <span> {data.productname} </span> </h2>
+                <h2 className={styles.movie_title}>   garments \ <span> {data.productname} </span> </h2>
                 <div className={styles.card_section}>
                     <div>
-                        <Image src={`https://trademovers.onrender.com/uploads/${data.image}`} alt={data.productname} width={600} height={500} priority={true} />
+                        <Image src={`https://trademovers.onrender.com/uploads/${data.image}`} alt={data.productname} width={600} height={500} priority={true} className={styles.card_sectionimg} />
                     </div>
                     <div>
-                        <h1>{data.productname}</h1>
+                        <h2>{data.productname}</h2>
                         <p>{data.productmaterial}</p>
+                        <p>{data.productcolor}</p>
+                        <p>{data.productsize}</p>
+                        <p>{data.productdescription}</p>
                     </div>
                 </div>
             </div>
