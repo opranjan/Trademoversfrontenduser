@@ -49,7 +49,7 @@ const Testimonials = () => {
               </div>
             </div>
             <div>
-              <p>
+              <p className={testimonialStyle.testimonilapara}>
               Trade Movers has been a fantastic organization to work with. They go the extra mile to ensure the Quality of goods is sent to Pan India in the time frame mentioned. I have worked with them multiple times and looking forward to many more collaborations with them. Thanks
               </p>
               {/* <MDBBtn href='#'>Button</MDBBtn> */}
